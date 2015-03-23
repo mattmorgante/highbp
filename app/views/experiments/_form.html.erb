@@ -28,16 +28,14 @@
     <%= f.number_field :end_value %>
   </div>
   <div class="field">
-    <%= f.label :treatment_id %><br>
-    <%= f.number_field :treatment_id %>
+    <%= f.hidden_field :treatment_id %>
   </div>
   <div class ="field"> 
     <%= f.label "Select your treatment option:"%>
     <%= f.select(:treatment_id, options_for_select(Treatment.all.collect{ |t| [t.name, t.id]})) %>
   </div>
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.hidden_field :user_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
