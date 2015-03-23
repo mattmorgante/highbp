@@ -1,0 +1,45 @@
+<%= form_for(@experiment) do |f| %>
+  <% if @experiment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@experiment.errors.count, "error") %> prohibited this experiment from being saved:</h2>
+
+      <ul>
+      <% @experiment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "What's your current blood pressure?" %><br>
+    <%= f.number_field :initial_value %>
+  </div>
+  <div class="field">
+    <%= f.label "What day do you want to start your experiment?" %><br>
+    <%= f.datetime_select :start %>
+  </div>
+  <div class="field">
+    <%= f.label "What day do you want to start your experiment?" %><br>
+    <%= f.datetime_select :end %>
+  </div>
+  <div class="field">
+    <%= f.label "What do you want your blood pressure to be by the end?" %><br>
+    <%= f.number_field :end_value %>
+  </div>
+  <div class="field">
+    <%= f.label :treatment_id %><br>
+    <%= f.number_field :treatment_id %>
+  </div>
+  <div class ="field"> 
+    <%= f.label "Select your treatment option:"%>
+    <%= f.select(:treatment_id, options_for_select(Treatment.all.collect{ |t| [t.name, t.id]})) %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

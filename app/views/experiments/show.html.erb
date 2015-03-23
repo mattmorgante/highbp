@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @experiment.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @experiment.end %>
+</p>
+
+<p>
+  <strong>Initial value:</strong>
+  <%= @experiment.initial_value %>
+</p>
+
+<p>
+  <strong>End value:</strong>
+  <%= @experiment.end_value %>
+</p>
+
+<p>
+  <strong>Treatment:</strong>
+  <%= @experiment.treatment_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @experiment.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_experiment_path(@experiment) %> |
+<%= link_to 'Back', experiments_path %>

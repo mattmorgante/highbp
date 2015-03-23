@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  start: 2015-03-23 13:16:28
+  end: 2015-03-23 13:16:28
+  initial_value: 1
+  end_value: 1
+  treatment_id: 1
+  user_id: 1
+
+two:
+  start: 2015-03-23 13:16:28
+  end: 2015-03-23 13:16:28
+  initial_value: 1
+  end_value: 1
+  treatment_id: 1
+  user_id: 1
