@@ -1,28 +1,33 @@
-== README
+User Stories (3.23.15)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+As a user 
+  I want to sign up 
+  So that I can log back in to the app later
 
-Things you may want to cover:
+As a user 
+  I want to input my current blood pressure
+  So that I can evaluate it in the future 
 
-* Ruby version
+As a user 
+  I want to select a treatment option 
+  So that I can see if it works 
 
-* System dependencies
+As a user 
+  I want to enter a goal 
+  So that I have something to work towards! 
 
-* Configuration
+As a user 
+  I want to select a start date and end date
+  So that I can set up a timeframe for my experiment 
 
-* Database creation
+As a user 
+  I want to receive text messages 
+  So that I can receive reminders to take my medication
 
-* Database initialization
+As a user 
+  I want to respond to text messages 
+  So that I know if I've been successful in following the treatment
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+As a user 
+  I want to input my updated blood pressure
+  So that I can evaluate the effectiveness of the treatment 
