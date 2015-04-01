@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150323121803) do
+ActiveRecord::Schema.define(version: 20150401071509) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "experiments", force: :cascade do |t|
-    t.datetime "start"
-    t.datetime "end"
+    t.date     "start"
+    t.date     "end"
     t.integer  "initial_value"
     t.integer  "end_value"
     t.integer  "treatment_id"

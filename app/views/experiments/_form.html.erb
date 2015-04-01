@@ -15,13 +15,18 @@
     <%= f.label "What's your current blood pressure?" %><br>
     <%= f.number_field :initial_value %>
   </div>
-  <div class="field">
-    <%= f.label "What day do you want to start your experiment?" %><br>
-    <%= f.datetime_select :start %>
   </div>
-  <div class="field">
-    <%= f.label "What day do you want to start your experiment?" %><br>
-    <%= f.datetime_select :end %>
+  <div class="grid">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <%= f.label "What day do you want to start your experiment?" %><br>
+          <%= date_field(:experiment, :start, { class: "form-control" } ) %>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
+          <%= f.label "What day do you want to end your experiment?" %><br>
+          <%= date_field(:experiment, :end, { class: "form-control" } ) %>
+        </div>
+    </div>   
   </div>
   <div class="field">
     <%= f.label "What do you want your blood pressure to be by the end?" %><br>
