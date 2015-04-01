@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
+gem 'letter_opener'
 gem 'twilio-ruby'
 gem 'delayed_job_active_record'
 gem 'daemons', '~> 1.2.2'

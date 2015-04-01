@@ -29,6 +29,7 @@ class ExperimentsController < ApplicationController
 
     respond_to do |format|
       if @experiment.save
+        Confirmation.confirmation_email(@user, @experiment).deliver_now
         format.html { redirect_to @experiment, notice: 'Experiment was successfully created.' }
         format.json { render :show, status: :created, location: @experiment }
       else
