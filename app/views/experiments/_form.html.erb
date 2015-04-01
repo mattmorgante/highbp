@@ -34,9 +34,7 @@
     <%= f.label "Select your treatment option:"%>
     <%= f.select(:treatment_id, options_for_select(Treatment.all.collect{ |t| [t.name, t.id]})) %>
   </div>
-  <div class="field">
-    <%= f.hidden_field :user_id %>
-  </div>
+    <%= f.hidden_field :user_id,  value: current_user.id %>
   <div class="actions">
     <%= f.submit %>
   </div>

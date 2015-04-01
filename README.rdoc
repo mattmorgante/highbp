@@ -1,12 +1,16 @@
+To-do 4.1.15
+
+
+
 User Stories (3.23.15)
 
 As a user 
   I want to sign up 
-  So that I can log back in to the app later
+  So that I can log back in to the app later *
 
 As a user 
   I want to input my current blood pressure
-  So that I can evaluate it in the future 
+  So that I can evaluate it in the future *
 
 As a user 
   I want to select a treatment option 

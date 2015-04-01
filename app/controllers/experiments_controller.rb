@@ -15,6 +15,7 @@ class ExperimentsController < ApplicationController
   # GET /experiments/new
   def new
     @experiment = Experiment.new
+    @experiment.user = current_user
   end
 
   # GET /experiments/1/edit
